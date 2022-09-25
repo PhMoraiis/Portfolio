@@ -1,7 +1,7 @@
 const button = document.querySelector('button[type=submit]');
 
 const addLoading = () => {
-    button.innerHTML = '<img src="/portfolioBootstrap/assets/src/loader.png" class="loading" alt="">';
+    button.innerHTML = '<img src="src/loader.png" class="loading" alt="">';
 }
 
 const clearForm = () => {
@@ -13,7 +13,7 @@ const clearForm = () => {
 
 const removeLoading = () => {
     // adiciona um delay de 1 segundo para que o usuário veja o check
-    button.innerHTML = '<img src="/portfolioBootstrap/assets/src/check.png" class="check" alt="">';
+    button.innerHTML = '<img src="src/check.png" class="check" alt="">';
     setTimeout(() => {
         button.innerHTML = 'Enviar Mensagem';
     }, 1000);
