@@ -1,0 +1,265 @@
+@import url('http://fonts.cdnfonts.com/css/baron-neue');
+
+* {
+    font-family: 'Baron Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #141E30;
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    background: linear-gradient(to right, #243B55, #141E30);
+}
+
+.secondary-color {
+    background: #e8eaec;
+}
+
+/* Navbar */
+.logo {
+    filter: contrast(0);
+    filter: brightness(100);
+}
+
+.navbar {
+    background: transparent;
+}
+
+.navbar-toggler {
+    color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+.nav-link:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+/* Titulo */
+.contato {
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+}
+
+.title-contato {
+    font-size: 4rem;
+    padding-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.dot {
+    font-size: 6rem;
+}
+
+.subtitle-contato {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    color: #e8eaec;
+    opacity: 0.8;
+}
+
+/* FORM */
+.title-form{
+    font-size: 2rem;
+    padding-bottom: 10px;
+    color: #243B55;
+    text-transform: uppercase;
+}
+
+.subtitle-form {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    color: #243B55;
+    opacity: 0.6;
+}
+
+.page-section {
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+}
+
+section#contact form#contactForm .form-group {
+    margin-bottom: 1.5rem;
+}
+
+section#contact form#contactForm .form-group input,
+section#contact form#contactForm .form-group textarea {
+    padding: 1.25rem;
+    background: linear-gradient(to right, #243B55, #141E30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    color: #e8eaec;
+}
+
+section#contact form#contactForm .form-group input.form-control {
+    height: auto;
+}
+
+section#contact form#contactForm .form-group-textarea {
+    height: 100%;
+}
+
+section#contact form#contactForm .form-group-textarea textarea {
+    height: 100%;
+    min-height: 10rem;
+}
+
+section#contact form#contactForm p.help-block {
+    margin: 0;
+}
+
+section#contact form#contactForm .form-control:focus {
+    border-color: #e8eaec;
+}
+
+section#contact form#contactForm ::-webkit-input-placeholder {
+    color: #e8eaec;
+}
+
+section#contact form#contactForm :-moz-placeholder {
+    color: #e8eaec;
+}
+
+section#contact form#contactForm ::-moz-placeholder {
+    color: #e8eaec;
+}
+
+section#contact form#contactForm :-ms-input-placeholder {
+    color: #e8eaec;
+}
+
+.btn {
+    color: #395781;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    outline: 2px solid #395781;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+}
+
+.btn:hover {
+    color: #243B55;
+}
+
+.check {
+    width: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.loading {
+    width: 30px;
+    transition: 0.3s ease-in-out;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* button top */
+
+/* Button top */
+
+#btnTop {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: #243B55;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 1s;
+    outline: 2px solid #fff;
+    font-size: 22px;
+}
+
+#btnTop:hover{
+    background-color: #e6e6e6;
+    outline: 2px solid #243B55;
+}
+
+#btnTop:hover > .bi-arrow-up {
+    color: #243B55;
+}
+
+.bi-arrow-up{
+    color: #e6e6e6;
+    transition: 1s;
+}
+
+
+/* Footer */
+
+.mt {
+    /* footer */
+    margin-top: 2.3rem;
+}
+
+.text-footer {
+    color: #e8eaec;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #243B55;
+}
+
+.follow-us-nav a .fa {
+    font-size: 24px;
+}
+
+.follow-us-nav .nav-link {
+    transition: 0.3s;
+    font-size: 30px;
+    margin-right: 1rem;
+    color: #e8eaec;
+}
+
+.follow-us-nav .nav-link .bi-instagram:hover {
+    color: #3f729b;
+}
+
+.follow-us-nav .nav-link .bi-twitter:hover {
+    color: #00acee;
+}
+
+.follow-us-nav .nav-link .bi-linkedin:hover {
+    color: #0e76a8;
+}
+
+.follow-us-nav .nav-link .bi-github:hover {
+    color: #000;
+}
+
+/* scroll */
+
+.contato, .navbar, .form{
+    visibility: hidden;
+}
