@@ -1,0 +1,219 @@
+@import url('http://fonts.cdnfonts.com/css/baron-neue');
+
+* {
+    font-family: 'Baron Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.logo {
+    filter: contrast(0);
+    filter: brightness(100);
+}
+
+.navbar {
+    background: transparent;
+}
+
+.navbar-toggler {
+    color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+.nav-link:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+/* Body */
+
+body {
+    background: #141E30;
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    background: linear-gradient(to right, #243B55, #141E30);
+}
+
+.container {
+    color: #e8eaec;
+}
+
+/* Titulos */
+
+.portf {
+    margin-top: 6rem;
+    margin-bottom: 16rem;
+}
+
+.title-portf {
+    font-size: 4rem;
+    padding-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.dot {
+    font-size: 6rem;
+}
+
+.subtitle-portf {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    color: #e8eaec;
+    opacity: 0.8;
+}
+
+.paragraph-portf {
+    font-size: 1rem;
+}
+
+/* GRID */
+
+.cont-grid{
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.portfolio-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    max-width: 530px;
+    margin: auto auto 1rem;
+    border-radius: 20px;
+    animation: transitionfade 0.5s ease-in-out 0s 1 normal;
+    transition: 0.5s;
+}
+
+@keyframes transitionfade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.portfolio-item img {
+    transition: -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+    border-radius: 10px;
+}
+
+.portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+    border-radius: 10px;
+}
+
+/* button top */
+
+#btnTop {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: #243B55;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 1s;
+    outline: 2px solid #fff;
+    font-size: 22px;
+}
+
+#btnTop:hover{
+    background-color: #e6e6e6;
+    outline: 2px solid #243B55;
+}
+
+#btnTop:hover > .bi-arrow-up {
+    color: #243B55;
+}
+
+.bi-arrow-up{
+    color: #e6e6e6;
+    transition: 1s;
+}
+
+/* Footer */
+
+.mt {
+    /* footer */
+    margin-top: 2.3rem;
+}
+
+.text-footer {
+    color: #243B55;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #e8eaec;
+}
+
+.follow-us-nav a .fa {
+    font-size: 24px;
+}
+
+.follow-us-nav .nav-link {
+    transition: 0.3s;
+    font-size: 30px;
+    margin-right: 1rem;
+    color: #243B55;
+}
+
+.follow-us-nav .nav-link .bi-instagram:hover {
+    color: #3f729b;
+}
+
+.follow-us-nav .nav-link .bi-twitter:hover {
+    color: #00acee;
+}
+
+.follow-us-nav .nav-link .bi-linkedin:hover {
+    color: #0e76a8;
+}
+
+.follow-us-nav .nav-link .bi-github:hover {
+    color: #000;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 992px) {
+    .portfolio-item {
+        max-width: none;
+        margin: 0;
+    }
+}
+
+/* Scroll Reveal */
+
+.portf, .project-title, .navbar {
+    visibility: hidden;
+}
