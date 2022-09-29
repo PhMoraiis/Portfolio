@@ -242,7 +242,7 @@ footer {
         height: 100%;
         margin-bottom: -170rem;
         margin-left: -7.5rem;
-        
+        display: none;
     }
 
     .text-history{
