@@ -16,4 +16,4 @@ Os frameworks utilizados foram o Bootstrap, biblioteca para o CSS e o ScrollReve
 
 ## Imagem do Projeto Finalizado
 
-<img src="src/ProjetoFInalizadoPort.jpg" alt="Imagem do Projeto Finalizado"/>
+<img src="src/ProjetoFinish.jpeg" alt="Imagem do Projeto Finalizado"/>
